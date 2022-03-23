@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 7280752513643992934}
   - component: {fileID: 5659333393718678246}
   - component: {fileID: 1387087252038566574}
+  - component: {fileID: 336567557370607941}
   m_Layer: 0
   m_Name: EnemySpaceship
   m_TagString: Untagged
@@ -86,6 +87,7 @@ MonoBehaviour:
   _movementSystem: {fileID: 590599124999967756}
   _weaponSystem: {fileID: 590599124999967758}
   _battleIdentity: 2
+  _bonusSpawnSystem: {fileID: 336567557370607941}
 --- !u!114 &590599124999967860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +189,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _representation: {fileID: 1507206475712916754}
+--- !u!114 &336567557370607941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590599124999967857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebc6c30af4b7424c98410806d77b2a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bonuses:
+  - {fileID: 7423778058049150466, guid: b2686709684e4884bb3095d4b9c9e772, type: 3}
+  - {fileID: 88495052592643573, guid: 55ad0f0aec811284ca339ec60575c60b, type: 3}
+  _spawnChance: 0.2
 --- !u!1 &1507206475712916752
 GameObject:
   m_ObjectHideFlags: 0

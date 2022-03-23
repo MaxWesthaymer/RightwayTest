@@ -30,5 +30,17 @@ namespace Gameplay.ShipSystems
             _currentHealth -= damage;
             HealthChanged?.Invoke(_currentHealth);
         }
+
+        public void GiveHealth(float value)
+        {
+            if (_currentHealth + value >= _maxHealth)
+            {
+                _currentHealth = _maxHealth;
+                HealthChanged?.Invoke(_currentHealth);
+                return;
+            }
+            _currentHealth += value;
+            HealthChanged?.Invoke(_currentHealth);
+        }
     }
 }

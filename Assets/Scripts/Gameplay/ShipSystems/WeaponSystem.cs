@@ -27,6 +27,12 @@ namespace Gameplay.ShipSystems
             _weapons.ForEach(w => w.TriggerFire());
         }
 
+        public void RateUpWeapons(int rateUpValue)
+        {
+            _weapons.ForEach(w => w.RateUp(rateUpValue));
+            OnWeaponRateChange?.Invoke(GetWeaponsRate());
+        }
+
         private float GetWeaponsRate()
         {
             float rate = 0;

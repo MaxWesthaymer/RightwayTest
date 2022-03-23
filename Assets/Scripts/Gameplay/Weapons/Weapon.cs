@@ -40,6 +40,14 @@ namespace Gameplay.Weapons
 
         public float GetWeaponRate() => 60 / _cooldown;
 
+        public void RateUp(int rateUpValue)
+        {
+            float newWeaponRate = GetWeaponRate() + rateUpValue;
+            float newCooldown = 60 / newWeaponRate;
+            Debug.Log($"newCooldown {newCooldown}");
+            _cooldown = newCooldown;
+        }
+
         private IEnumerator Reload(float cooldown)
         {
             _readyToFire = false;

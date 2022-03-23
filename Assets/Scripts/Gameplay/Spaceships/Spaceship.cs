@@ -14,7 +14,7 @@ namespace Gameplay.Spaceships
         [SerializeField] private WeaponSystem _weaponSystem;
         [SerializeField] private UnitBattleIdentity _battleIdentity;
 
-        private Game _game;
+        protected Game _game;
 
         public MovementSystem MovementSystem => _movementSystem;
         public WeaponSystem WeaponSystem => _weaponSystem;
@@ -30,13 +30,7 @@ namespace Gameplay.Spaceships
 
         public virtual void ApplyDamage(IDamageDealer damageDealer)
         {
-            if (damageDealer.BattleIdentity == UnitBattleIdentity.Ally)
-
-            {
-                _game.AddScore();
-            }
-
-            Destroy(gameObject);
+            
         }
     }
 }
