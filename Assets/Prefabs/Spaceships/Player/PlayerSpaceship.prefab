@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6910651213156479276}
   - component: {fileID: 6910651213156479315}
   - component: {fileID: 6910651213156479313}
-  - component: {fileID: 6910651213156479314}
+  - component: {fileID: 3583105637017573169}
   - component: {fileID: 6910651213156479312}
   - component: {fileID: 6405689624283467926}
   - component: {fileID: 2540544495500081184}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shipController: {fileID: 6910651213156479313}
-  _movementSystem: {fileID: 6910651213156479314}
+  _movementSystem: {fileID: 3583105637017573169}
   _weaponSystem: {fileID: 6910651213156479312}
   _battleIdentity: 1
   healthSystem: {fileID: 6405689624283467926}
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16c62f91b206fd4f9af7a858af1fe9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6910651213156479314
+--- !u!114 &3583105637017573169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,11 +158,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6910651213156479279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6671edb3d37b87b4a9dad05317ca7b62, type: 3}
+  m_Script: {fileID: 11500000, guid: a2bf3a7bc3b14282b327730582f57927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _lateralMovementSpeed: 50
   _longitudinalMovementSpeed: 0
+  _spriteRenderer: {fileID: 2352596708668287078}
 --- !u!114 &6910651213156479312
 MonoBehaviour:
   m_ObjectHideFlags: 0

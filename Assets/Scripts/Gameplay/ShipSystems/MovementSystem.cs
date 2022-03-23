@@ -23,7 +23,7 @@ namespace Gameplay.ShipSystems
         }
 
         
-        private void Move(float amount, Vector3 axis)
+        protected virtual void Move(float amount, Vector3 axis)
         {
             transform.Translate(amount * axis.normalized);
         }
