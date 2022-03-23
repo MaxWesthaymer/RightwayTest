@@ -22,19 +22,19 @@ namespace Gameplay.Weapons.Projectiles
 
         
 
-        public void Init(UnitBattleIdentity battleIdentity)
+        public virtual void Init(UnitBattleIdentity battleIdentity)
         {
             _battleIdentity = battleIdentity;
         }
         
 
-        private void Update()
+        protected virtual void Update()
         {
             Move(_speed);
         }
 
         
-        private void OnCollisionEnter2D(Collision2D other)
+        protected virtual void OnCollisionEnter2D(Collision2D other)
         {
             var damagableObject = other.gameObject.GetComponent<IDamagable>();
             
@@ -44,9 +44,10 @@ namespace Gameplay.Weapons.Projectiles
                 damagableObject.ApplyDamage(this);
             }
         }
-        
 
-
-        protected abstract void Move(float speed);
+        private void Move(float speed)
+        {
+            transform.Translate(speed * Time.deltaTime * Vector3.up);
+        }
     }
 }

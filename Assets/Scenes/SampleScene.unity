@@ -240,7 +240,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _object
       value: 
-      objectReference: {fileID: 590599124999967857, guid: c2f7d29ccf40de44d81e56cc718f5e0e,
+      objectReference: {fileID: 1185498876408434903, guid: 01fa6c2b62048454a87d66edf307d512,
         type: 3}
     - target: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
         type: 3}
@@ -1179,6 +1179,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerSpaceship
       objectReference: {fileID: 0}
+    - target: {fileID: 6910651213495973518, guid: db160e65d2bc1c043828d51dfbc352da,
+        type: 3}
+      propertyPath: _projectile
+      value: 
+      objectReference: {fileID: 3274570344616576306, guid: a0016ad46649e8c409ee27a3ba0dfdd4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db160e65d2bc1c043828d51dfbc352da, type: 3}
 --- !u!1001 &7139034146379299536
