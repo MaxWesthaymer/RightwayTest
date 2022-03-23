@@ -238,6 +238,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
         type: 3}
+      propertyPath: _object
+      value: 
+      objectReference: {fileID: 590599124999967857, guid: c2f7d29ccf40de44d81e56cc718f5e0e,
+        type: 3}
+    - target: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
+        type: 3}
       propertyPath: _parent
       value: 
       objectReference: {fileID: 1623967835}
@@ -1113,11 +1119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1623967835}
     m_Modifications:
-    - target: {fileID: 6405689624283467926, guid: db160e65d2bc1c043828d51dfbc352da,
-        type: 3}
-      propertyPath: _maxHealth
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 6910651213156479276, guid: db160e65d2bc1c043828d51dfbc352da,
         type: 3}
       propertyPath: m_RootOrder
@@ -1247,6 +1248,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
+        type: 3}
+      propertyPath: _object
+      value: 
+      objectReference: {fileID: 590599124999967857, guid: c2f7d29ccf40de44d81e56cc718f5e0e,
+        type: 3}
     - target: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
         type: 3}
       propertyPath: _parent
