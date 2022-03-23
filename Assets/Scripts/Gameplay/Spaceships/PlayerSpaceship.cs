@@ -1,4 +1,5 @@
-﻿using Gameplay.MainGame;
+﻿using System;
+using Gameplay.MainGame;
 using Gameplay.ShipSystems;
 using Gameplay.Weapons;
 using UnityEngine;
@@ -16,6 +17,7 @@ namespace Gameplay.Spaceships
         {
             base.Initialize(game);
             healthSystem.Init();
+            healthSystem.OnDeath += DestroyShip;
         }
 
         public override void ApplyDamage(IDamageDealer damageDealer)
@@ -24,6 +26,16 @@ namespace Gameplay.Spaceships
             {
                 healthSystem.TakeDamage(damageDealer.Damage);
             }
+        }
+
+        private void DestroyShip()
+        {
+            Destroy(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            healthSystem.OnDeath -= DestroyShip;
         }
     }
 }

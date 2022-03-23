@@ -10,12 +10,14 @@ namespace Gameplay.Helpers
 
         static GameAreaHelper()
         {
-            _camera = Camera.main;
+            SetCamera();
         }
 
-        
         public static bool IsInGameplayArea(Transform objectTransform, Bounds objectBounds)
         {
+            if(_camera == null)
+                SetCamera();
+            
             var camHalfHeight = _camera.orthographicSize;
             var camHalfWidth = camHalfHeight * _camera.aspect;
             var camPos = _camera.transform.position;
@@ -32,6 +34,7 @@ namespace Gameplay.Helpers
                 && (objectPos.y + objectBounds.extents.y > bottomBound);
 
         }
-        
+
+        private static void SetCamera() => _camera = Camera.main;
     }
 }
