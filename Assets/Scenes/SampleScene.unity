@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &26297282 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
+    type: 3}
+  m_PrefabInstance: {fileID: 7139034146379299536}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e165445b5e1b14e8e663bf098668bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &52604990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6910651213156479276, guid: db160e65d2bc1c043828d51dfbc352da,
@@ -396,6 +408,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160244650}
   m_CullTransparentMesh: 0
+--- !u!114 &161864266 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6405689624283467926, guid: db160e65d2bc1c043828d51dfbc352da,
+    type: 3}
+  m_PrefabInstance: {fileID: 6910651213141950738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c550d4ebcfaa451195138f6450d6b43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &161864270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6910651213156479315, guid: db160e65d2bc1c043828d51dfbc352da,
+    type: 3}
+  m_PrefabInstance: {fileID: 6910651213141950738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0a48ca53df429a8178a3f816dd429a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &174029666
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +444,7 @@ GameObject:
   - component: {fileID: 174029669}
   - component: {fileID: 174029668}
   - component: {fileID: 174029670}
+  - component: {fileID: 174029671}
   m_Layer: 5
   m_Name: PlayerHUD
   m_TagString: Untagged
@@ -498,6 +535,20 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &174029671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174029666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811a8e6a4b9bf7d4fa7d67f3c5335d3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthValue: {fileID: 693144248}
+  _scoreValue: {fileID: 705457767}
 --- !u!1 &291554735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1538,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784802297}
   m_CullTransparentMesh: 0
+--- !u!114 &800576524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
+    type: 3}
+  m_PrefabInstance: {fileID: 475596460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e165445b5e1b14e8e663bf098668bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947539396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1563,7 @@ GameObject:
   - component: {fileID: 947539398}
   - component: {fileID: 947539397}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1606,8 +1669,9 @@ GameObject:
   - component: {fileID: 1319649024}
   - component: {fileID: 1319649023}
   - component: {fileID: 1319649022}
+  - component: {fileID: 1319649025}
   m_Layer: 5
-  m_Name: WeaponHUD
+  m_Name: PlayerWeaponHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1696,6 +1760,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319649020}
   m_CullTransparentMesh: 0
+--- !u!114 &1319649025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319649020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de42b74b2b6a96d48b78704b16300a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponType: {fileID: 741796565}
+  _weaponRate: {fileID: 118056681}
 --- !u!1 &1589726037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,6 +2008,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706930946}
   m_CullTransparentMesh: 0
+--- !u!114 &1770632464 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7139034145302338194, guid: c2e57a14d12b5bc4fba0a39e34406cab,
+    type: 3}
+  m_PrefabInstance: {fileID: 525058028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e165445b5e1b14e8e663bf098668bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1789421816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,6 +2529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2147392310}
+  - component: {fileID: 2147392311}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -2460,6 +2551,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2147392311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147392309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c378811681a3f488e4b047f7e08284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawners:
+  - {fileID: 26297282}
+  - {fileID: 1770632464}
+  - {fileID: 800576524}
+  _playerShip: {fileID: 161864270}
+  _playerStatsUI: {fileID: 174029671}
+  _playerWeaponUI: {fileID: 1319649025}
 --- !u!1001 &6910651213141950738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2526,6 +2636,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerSpaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910651213156479315, guid: db160e65d2bc1c043828d51dfbc352da,
+        type: 3}
+      propertyPath: healthSystem
+      value: 
+      objectReference: {fileID: 161864266}
+    - target: {fileID: 6910651213495973518, guid: db160e65d2bc1c043828d51dfbc352da,
+        type: 3}
+      propertyPath: _cooldown
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db160e65d2bc1c043828d51dfbc352da, type: 3}

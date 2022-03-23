@@ -38,6 +38,7 @@ namespace Gameplay.Weapons
             StartCoroutine(Reload(_cooldown));
         }
 
+        public float GetWeaponRate() => 60 / _cooldown;
 
         private IEnumerator Reload(float cooldown)
         {

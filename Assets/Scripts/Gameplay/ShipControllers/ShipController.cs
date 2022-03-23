@@ -18,6 +18,9 @@ namespace Gameplay.ShipControllers
 
         private void Update()
         {
+            if(_spaceship == null)
+                return;
+            
             ProcessHandling(_spaceship.MovementSystem);
             ProcessFire(_spaceship.WeaponSystem);
         }

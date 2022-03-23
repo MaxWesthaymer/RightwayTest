@@ -1,5 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using Gameplay.MainGame;
+using Gameplay.Spaceships;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,15 +24,18 @@ namespace Gameplay.Spawners
         [SerializeField]
         private bool _autoStart = true;
 
+        private Game _game;
 
-        private void Start()
+        public void Initialize(Game game)
         {
+            _game = game;
+
             if (_autoStart)
                 StartSpawn();
         }
 
 
-        public void StartSpawn()
+        private void StartSpawn()
         {
             StartCoroutine(Spawn());
         }
@@ -48,7 +52,9 @@ namespace Gameplay.Spawners
             
             while (true)
             {
-                Instantiate(_object, transform.position, transform.rotation, _parent);
+                var ship = Instantiate(_object, transform.position, transform.rotation, _parent).GetComponent<Spaceship>();
+                ship.Initialize(_game);
+                
                 yield return new WaitForSeconds(Random.Range(_spawnPeriodRange.x, _spawnPeriodRange.y));
             }
         }
