@@ -136,7 +136,7 @@ MonoBehaviour:
   _movementSystem: {fileID: 6910651213156479314}
   _weaponSystem: {fileID: 6910651213156479312}
   _battleIdentity: 1
-  _playerHealth: {fileID: 6405689624283467926}
+  healthSystem: {fileID: 6405689624283467926}
 --- !u!114 &6910651213156479313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c550d4ebcfaa451195138f6450d6b43d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 1000
+  _maxHealth: 500
 --- !u!61 &2540544495500081184
 BoxCollider2D:
   m_ObjectHideFlags: 0

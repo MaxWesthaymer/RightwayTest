@@ -18,13 +18,23 @@ namespace Gameplay.ShipSystems
         public void Init(UnitBattleIdentity battleIdentity)
         {
             _weapons.ForEach(w => w.Init(battleIdentity));
-            OnWeaponRateChange?.Invoke(_weapons[0].GetWeaponRate());
+            OnWeaponRateChange?.Invoke(GetWeaponsRate());
         }
         
         
         public void TriggerFire()
         {
             _weapons.ForEach(w => w.TriggerFire());
+        }
+
+        private float GetWeaponsRate()
+        {
+            float rate = 0;
+
+            foreach (var weapon in _weapons)
+                rate += weapon.GetWeaponRate();
+
+            return rate;
         }
 
     }
